@@ -37,4 +37,4 @@ services:
         image: certbot/certbot
         volumes:
           - ./.volumes/nginx-certbot:/etc/letsencrypt
-        ommand: certonly --webroot --webroot-path=/var/www/html --email sammy@your_domain --agree-tos --no-eff-email --staging -d your_domain -d www.your_domain
+        command: certonly --webroot --webroot-path=/var/www/html --email sammy@your_domain --agree-tos --no-eff-email --staging -d your_domain -d www.your_domain
